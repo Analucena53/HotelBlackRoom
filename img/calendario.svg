@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64.319" height="64.319" viewBox="0 0 64.319 64.319">
+  <g id="calendario" transform="translate(0 0)">
+    <path id="Trazado_26" data-name="Trazado 26" d="M50.92,5.36H48.24V2.68a2.68,2.68,0,1,0-5.36,0V5.36H21.44V2.68a2.68,2.68,0,0,0-5.36,0V5.36H13.4A13.416,13.416,0,0,0,0,18.76V50.92a13.416,13.416,0,0,0,13.4,13.4H50.92a13.416,13.416,0,0,0,13.4-13.4V18.76A13.416,13.416,0,0,0,50.92,5.36ZM5.36,18.76a8.04,8.04,0,0,1,8.04-8.04H50.92a8.04,8.04,0,0,1,8.04,8.04v2.68H5.36Zm45.56,40.2H13.4a8.04,8.04,0,0,1-8.04-8.04V26.8h53.6V50.92A8.04,8.04,0,0,1,50.92,58.959Z" transform="translate(0 0)" fill="#ff8702"/>
+    <ellipse id="Elipse_5" data-name="Elipse 5" cx="4.02" cy="4.02" rx="4.02" ry="4.02" transform="translate(28.14 36.18)" fill="#ff8702"/>
+    <ellipse id="Elipse_6" data-name="Elipse 6" cx="4.02" cy="4.02" rx="4.02" ry="4.02" transform="translate(14.74 36.18)" fill="#ff8702"/>
+    <ellipse id="Elipse_7" data-name="Elipse 7" cx="4.02" cy="4.02" rx="4.02" ry="4.02" transform="translate(41.54 36.18)" fill="#ff8702"/>
+  </g>
+</svg>

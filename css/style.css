@@ -1,0 +1,1697 @@
+/* reset */
+input,textarea {width:100%; outline:none; font-size:16px; resize:vertical;}
+* {margin:0;box-sizing: border-box;}
+ul {list-style: none;padding: 0; margin:0;}
+img, figure {max-width: 100%;display: block;height: auto}
+a {text-decoration: none; color: none;}
+h1,h2,h3,h4,h5,h6, {margin:0; font-family: 'titillium web';}
+p {margin:0; font-family: 'roboto mono';}
+
+/* MI TEMA */
+
+  /* PALETA */
+:root {
+    --naranja: #FF8702;
+    --crema:#F0EADA;
+}
+
+body{
+    font-family: 'Roboto Mono', monospace;
+    font-family: 'Titillium Web', sans-serif;
+    height: 100vh;
+}
+
+/*/////////////////////////////////////////////////////////////////////////
+/////////////////////////////////INDEX/////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////*/
+
+/*CABECERA INDEX*/
+
+.cabecera { background-color: black; z-index:}
+
+.cabecera__contenido {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    position: fixed;
+}
+
+.cabecera__logo { 
+width: 150px;
+height: 50px;
+padding: 15px;
+}
+
+.cabecera__logo:hover { background-color: var(--naranja);}
+
+.cabecera__burger{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50px;
+    height: 50px;
+    padding: 16px 12px;
+    background-color: black;
+}
+
+.cabecera__burger > div {
+    height:3px;
+    background-color: var(--crema);
+    transition: 0.5s;
+}
+
+.cabecera__nav{
+    display: none;
+    position: absolute;
+    top:50px;
+    left:0;
+    background-color: black;
+    width: 100%;
+    height: calc(100vh - 50px);
+}
+
+
+
+
+#check:checked ~ .cabecera__burger .palitouno{
+    transform: translateY(6px) rotate(-45deg);
+    background-color: var(--naranja);
+}
+
+#check:checked ~ .cabecera__burger .palitotres{
+    transform: translateY(-6px) rotate(-45deg);
+    background-color: var(--naranja);
+}
+
+#check:checked ~ .cabecera__burger .palitodos{
+    transform: rotate(45deg);
+    background-color: var(--naranja);
+}
+
+#check:checked ~ .cabecera__nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+}
+
+
+.cabecera__li{
+    margin: 40px;
+    text-align: left;
+}
+
+.cabecera__link{
+    color: var(--naranja);
+    font-family: 'titillium web';
+    font-size: 22px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.cabecera__link:hover { color: var(--crema);}
+
+
+/* MENU INDEX */
+
+/*portada*/
+
+.container {
+    max-width: 100%;
+    background-color: transparent;
+    margin:0;
+    padding: 0;
+}
+
+.portada {
+    background-color: black;
+    padding-top: 70px;
+    padding-bottom: 30px;
+}
+
+.borde__uno {
+    width:100%;
+    height: 3px;
+    background-color:var(--crema);
+    margin-bottom: 7px;   
+    
+}
+
+.borde__dos {
+    width:50%;
+    height: 3px;
+    background-color: var(--crema);
+    margin-bottom: 30px;
+}
+
+.slogan {
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 21px;
+    letter-spacing: 2px;
+    color:var(--crema);
+    text-transform: uppercase;
+    text-align: center;
+    margin: 30px 31px;
+    margin-bottom: 30px;
+}
+
+.imagen__portada{
+    border-radius: 30%;
+    width: 290px;
+    height: 290px;
+    margin: auto;
+}
+
+.subportada{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+}
+
+.titulo {
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    color:var(--naranja);
+}
+
+.fecha {
+    font-size: 18px;
+    font-weight: bold;
+    color:var(--crema);
+    padding-bottom: 30px;
+    margin-left: 125px;
+}
+
+/*boton visitar*/
+.div-boton { width: 128px;
+    height:50px;
+    border-radius: 30px;
+    border: 3px solid var(--crema);
+    padding-top: 4px;
+    padding-left: 11px;
+    margin: auto;
+}
+.div-boton a {color: var(--crema);}
+
+.boton-personalizado { 
+    font-family: 'Roboto mono';
+    text-align: center;
+    font-size: 23px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/*servicios*/
+
+.servicios{
+    background-color: white;
+    padding-top: 30px;
+}
+
+.borde__tres {
+    width:100%;
+    height: 3px;
+    background-color: black;
+    margin-bottom: 7px; 
+    
+}
+
+.borde__cuatro {
+    width:50%;
+    height: 3px;
+    background-color:black;
+    margin-bottom: 30px;
+}
+
+.lujo, .eventos, .restaurante, .pet {
+    font-family: 'titillium web';
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.icono__camara, .icono__utensilios, .icono__pet {margin: auto;
+margin-bottom: 15px;}
+
+.icono__lujo { 
+    margin: auto;
+    margin-bottom: 27px;
+}
+
+
+
+/*destacados*/
+.destacados{
+    background-color: var(--crema);
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+.borde__cinco {
+    width:100%;
+    height: 3px;
+    background-color:var(--naranja);
+    margin-bottom: 7px; 
+}
+
+.borde__seis{
+    width:50%;
+    height: 3px;
+    background-color:var(--naranja);
+    margin-bottom: 30px;
+}
+
+.destacados__subtitulo {
+    font-family: 'roboto mono';
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-left: 15px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.destacados__titulo, .destacados__titulo__apetit, .destacados__titulo__biblio, .destacados__titulo__descanso  {
+    text-align: left;
+    text-transform: uppercase;
+    text-decoration: underline var(--naranja);
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 80px;
+    margin-right: 94px;
+    margin-bottom: 15px;
+}
+
+.destacados__imagen {
+    border-radius: 30%;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.naranja, .naranja__apetit, .naranja__biblio {
+    width:120px;
+    height:26px;
+    background-color: var(--naranja);
+    margin-left: 44px;
+    margin-bottom: 15px;
+}
+
+.destacados__fecha {
+    font-family:'Roboto Mono';
+    font-size: 16px;
+    padding-top: 4px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.destacados__texto, .destacados__texto__apetit, .destacados__texto__biblio, .destacados__texto__reserva {
+    margin: 0 44px;
+    margin-bottom: 20px;
+}
+
+/*pildora__mas*/
+
+.destacados__mas {display: none;}
+
+.pildora__mas {position: relative;}
+
+.saber__mas, .saber__mas__biblio, .saber__mas__apetit, 
+.bonapetit__saber__mas, .biblioteca__saber__mas{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    border:3px solid black;
+    margin: auto;
+    padding: 15px;  
+} 
+
+.destacados__vertical{
+    position: absolute;
+    background-color:black;
+    height: 26px;
+    width: 3px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}  
+
+.destacados__horizontal{
+    position: absolute;
+    background-color: black;
+    height: 3px;
+    width: 26px;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}  
+
+.separador {
+    width:50%;
+    height: 3px;
+    background-color:black;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.boton__reserva a { color:var(--crema);}
+
+.boton__reserva {
+    display: block;
+    width: 100px;
+    height: 35px ;
+    text-align: center;
+    background-color: black;
+    text-transform: uppercase;
+    font-family: 'Roboto mono';
+    font-size: 14px;
+    font-weight: bold;
+    margin: auto;
+    border-radius: 40px;
+    padding: 9px;
+    padding-bottom: 30px;
+}
+
+    .boton-personalizado:hover { color:black;}
+
+    .div-boton:hover {
+        background-color: var(--crema);
+    }
+
+    .div-boton:hover .boton-personalizado {color:black}
+
+    .cabecera__link:hover { color: var(--crema);}
+
+    
+
+    .boton__reserva a:hover { color:var(--naranja);}
+
+
+    .saber__mas__apetit:hover,
+    .saber__mas__biblio:hover { background-color: black;}
+
+    .saber__mas__apetit:hover .destacados__mas { color: var(--crema);}
+    .saber__mas__biblio:hover .destacados__mas { color: var(--crema);}
+
+    
+
+    
+
+
+/* PIE */
+.pie {
+    background-color: black;
+    padding-top: 30px;
+}
+
+.logo__pequeño{
+    
+    width: 38px;
+    height: 38px;
+    margin: auto;
+}
+
+.pie__logo {
+    padding-bottom: 30px;
+}
+
+.redes {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 30px;
+}
+.menu__item{
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin-left: 15px;
+    margin-right: 15px;
+    background-color: var(--crema);
+    border-radius: 100%;
+    font-size: 14px;
+    font-family: 'titillium web';
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 42px;
+    cursor: pointer;
+    z-index: 999;
+}
+
+.menu__item a {color:black;}
+
+.menu__item:hover {background-color: var(--naranja);}
+
+.marcador, .sobre, .telefono {
+    width: 20px;
+    margin: auto;
+    padding-bottom: 15px;
+}
+
+.direccion__hotel, .direccion__calle, 
+.direccion__postal, .direccion__correo, 
+.direccion__telefono, .copy {
+    font-family: 'Roboto mono';
+    font-weight: normal;
+    color:var(--crema);
+    text-transform: capitalize;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+}
+
+.direccion__postal, .direccion__telefono,
+.copy { padding-bottom: 30px;}
+
+.direccion__correo { 
+    text-transform: none;
+    padding-bottom: 20px;} 
+
+.copy {margin-bottom: 0;}
+
+
+
+
+/*/////////////////////////////////////////////////////////////////////////
+/////////////////////////////////EXPO/////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////*/
+
+/*Ahora*/
+
+.expo {
+    background-color:var(--crema);
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+.borde__cinco {
+    width:100%;
+    height: 3px;
+    background-color:var(--naranja);
+    margin-bottom: 7px;    
+    }
+
+.borde__seis {
+    width:50%;
+    height: 3px;
+    background-color: var(--naranja);
+    margin-bottom: 30px;
+    }
+
+
+.expo__titulo {
+    font-family: 'titillium web';
+    font-size: 26px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 30px;
+    }
+
+
+.carousel-inner { 
+    width: 290px; 
+    height: 290px;
+    margin: auto;
+    border-radius: 90px;
+    margin-bottom: 30px;
+}    
+
+
+.carousel-control-next {
+    right: 35px;
+}
+.carousel-control-prev {
+    left: 35px;
+}
+
+.protagonista {
+    font-size: 36px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--naranja);
+    text-align: center;
+}
+
+.protagonista__fecha {
+    font-family: 'Roboto Mono';
+    font-size: 16px;
+    text-align: center;
+}
+
+.protagonista__texto, .artista__texto {
+    font-size: 18px;
+    padding: 0 53px;
+}
+
+.protagonista__texto {padding-bottom: 30px;}
+
+.separador {
+    width:50%;
+    height: 3px;
+    background-color: black;
+    }
+
+.artista__titulo {
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.artista__foto {
+    border-radius: 90px;
+    margin: auto;
+    padding-top: 30px;
+}
+
+.titulos__ficha {
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: var(--naranja);
+    margin-bottom: 15px;
+    margin-left: 50px;
+}
+.texto__ficha {
+    font-family: 'Roboto Mono';
+    font-size: 16px;
+    margin: 0 50px;
+    margin-bottom: 15px;
+}
+
+
+/*Próximas*/
+.proximas {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.anteriores {
+    background-color: var(--crema);
+    padding-bottom: 30px;
+}
+
+.borde__siete {
+    width:100%;    
+    height: 3px;
+    background-color:black;
+    margin-bottom: 7px;    
+}
+
+.borde__ocho {
+    width:50%;
+    height: 3px;
+    background-color: black;
+    margin-bottom: 30px;
+}
+
+.ahora__titulo, .proximas__titulo, .anteriores__titulo {
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: underline 3px var(--naranja);
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.tarjeta__uno, .tarjeta__tres, .tarjeta__cuatro {margin-bottom: 30px;}
+
+.tarjeta__dos {margin-bottom: -15px;}
+
+.tarjeta_foto {
+    border-radius: 90px 90px 0 0;
+    margin: auto;
+}
+
+.datos__tarjeta {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--crema);
+    width: 290px;
+    height: 145px;
+    border-radius: 0 0 90px 90px;
+    margin: auto;
+    padding: 0 69px;
+}
+
+.datos__autora {
+    font-size: 22px;
+    text-transform: uppercase;
+    text-align: left;
+    border-bottom: 3px solid var(--naranja);
+    padding-bottom: 10px;
+}
+
+.datos__fecha {
+    font-family: 'Roboto mono';
+    font-size: 16px;
+}
+
+
+.separador__naranja {
+    width:50%;
+    height: 3px;
+    background-color: var(--naranja);
+    margin-bottom: 30px;
+}
+
+.tarjeta__tres .datos__tarjeta {background-color: white;}
+
+.tarjeta__cuatro .datos__tarjeta {background-color: white;}
+
+
+.texto__anteriores {
+    font-family: 'Roboto Mono';
+    font-size: 16px;
+    padding: 0 50px 30px;
+}
+
+.pildora__mas {position: relative;}
+
+.saber__mas__letras{
+    position: relative;
+    width: 56px;
+    height: 38px;
+    border-radius: 18px;
+    border:3px solid black;
+    background-color: var(--crema);
+    margin: auto;
+    padding: 15px;      
+}
+
+.saber__mas__letras:hover { background-color: black;}
+
+.destacados__mas__letras {
+    display: block;
+    position: absolute;
+    font-family: 'Roboto mono';
+    color:black;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    bottom: 0;
+    left: 9px;
+    top: 5px;
+}
+
+.saber__mas__letras:hover .destacados__mas__letras { color: var(--crema);}
+
+/*/////////////////////////////////////////////////////////////////////////
+/////////////////////////////////NOSOTROS/////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////*/
+.nosotros{
+    background-color: var(--crema);
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+.borde__nueve {
+    width:100%;
+    height: 3px;
+    background-color:var(--naranja);
+    margin-bottom: 7px; 
+}
+
+.borde__diez{
+    width:50%;
+    height: 3px;
+    background-color:var(--naranja);
+    margin-bottom: 30px;
+}
+
+.nosotros__titulo {
+    font-family: 'titillium web';
+    font-size: 26px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.nosotros__imagen {margin-bottom: 0;}
+
+.nosotros__foto, .gauche__foto {
+    margin: auto;
+    padding: 42.5px;
+    border-radius: 120px;
+}
+
+.nosotros__texto, .visitanos {
+    font-family: 'Roboto Mono';
+    font-size: 16px;
+    padding: 0 50px;
+}
+
+.gauche__texto { 
+    font-family: 'Roboto Mono';
+    font-size: 16px;
+    padding: 0 50px 30px;
+}
+
+
+.separador__nosotros {
+    width:50%;
+    height: 3px;
+    background-color:black;
+    margin-bottom: 30px;
+}
+
+.tarjeta__expo a, .tarjeta__espacios a { color: black;}
+
+.subtitulo__nosotros {
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: underline 3px var(--naranja);
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 0 50px;
+}
+
+.texto__subtitulo__nosotros {
+    padding: 0 50px 30px;
+}
+
+.foto__expo, .foto__espacios {
+    width: 290px;
+    border-radius: 90px 90px 0 0;
+    margin: auto;
+}
+
+.dato__expo, .dato__espacios {
+    width: 290px;
+    height: 145px;
+    border-radius: 0 0 90px 90px;
+    background-color: white;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.dato__espacios {margin-bottom: 0;}
+
+.titulo__expo, .titulo__espacios {
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: underline var(--naranja);
+    font-size: 20px;
+}
+
+/*/////////////////////////////////////////////////////////////////////////
+/////////////////////////////////ESPACIOS/////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////*/
+
+.espacios{
+    background-color: var(--crema);
+    padding-top: 30px;
+}
+
+.borde__once {
+    width:100%;
+    height: 3px;
+    background-color:var(--naranja);
+    margin-bottom: 7px; 
+}
+
+.borde__doce{
+    width:50%;
+    height: 3px;
+    background-color:var(--naranja);
+    margin-bottom: 30px;
+}
+
+.espacios__titulo {
+    font-family: 'titillium web';
+    font-size: 26px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 30px;
+    margin-bottom: 0;
+}
+
+.espacios__subtitulos {
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: underline 3px var(--naranja);
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.descanso__texto, .living__texto {
+    font-family: 'Roboto Mono';
+    font-size: 18px;
+    padding: 0 50px 30px;
+}
+
+.bonapetit__texto, .biblioteca__texto {
+    font-family: 'Roboto Mono';
+    font-size: 18px;
+    padding: 0 50px 30px 57px;
+}
+
+.descanso__foto, .bonapetit__foto, .living__foto, .biblioteca__foto {
+    margin: 0 30px;
+    border-radius: 90px;
+    margin-bottom: 30px;
+} 
+
+.descanso__reservar {
+    display: block;
+    width: 100px;
+    height: 35px ;
+    text-align: center;
+    background-color: black;
+    text-transform: uppercase;
+    color: white;
+    font-family: 'Roboto mono';
+    font-size: 14px;
+    font-weight: bold;
+    margin: auto;
+    border-radius: 40px;
+    padding: 9px;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+}
+
+.descanso__reservar:hover { color: var(--naranja);}
+
+.separador__espacios {
+    width:50%;
+    height: 3px;
+    background-color:black;
+    margin-bottom: 30px;
+}
+
+.saber__mas, .bonapetit__saber__mas, .biblioteca__saber__mas {margin-bottom: 30px;}
+
+/*/////////////////////////////////////////////////////////////////////////
+/////////////////////////////////RESERVAR/////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////*/
+
+.reservar{
+    background-color: var(--crema);
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+.borde__trece {
+    width:100%;
+    height: 3px;
+    background-color:var(--naranja);
+    margin-bottom: 7px; 
+}
+
+.borde__catorce{
+    width:50%;
+    height: 3px;
+    background-color:var(--naranja);
+    margin-bottom: 30px;
+}
+
+.reservar__titulo {
+    font-family: 'titillium web';
+    font-size: 26px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.reservar__texto {
+    font-family: 'Roboto Mono';
+    font-size: 18px;
+    padding: 0 50px;
+}
+
+.reservar__subtitulos {
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: left;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+.formulario{
+    padding: 0 20px 0;
+}
+
+.nombre, .apellidos, .email{
+    width: 100%;
+    min-height: 50px;
+    
+    font-size: 16px;
+    text-transform: uppercase;
+    border: 1px solid black;
+    margin-bottom: 20px; 
+    outline: none;
+    color:black;
+    font-family: inherit;
+}
+
+.entrada, .salida {
+    background-image: url(../img/calendario.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: calc(.75em + 2.375rem) calc(1em + 1rem);
+    width: 130px;
+    min-height: 50px;
+    font-size: 16px;
+    text-transform: uppercase;
+    border: 1px solid black;
+    margin-bottom: 20px; 
+    outline: none;
+    color:black;
+    font-family: inherit;
+}
+
+.check{
+    display: flex;
+    justify-content: space-between;
+}
+
+.checkin, .checkout {
+display: flex;
+flex-direction: column;
+
+}
+
+.sugerencias {
+    width: 100%;
+    min-height: 100px;
+    font-size: 16px;
+    text-transform: uppercase;
+    border: 1px solid black;
+    margin-bottom: 30px; 
+    outline: none;
+    color:black;
+    font-family: inherit;
+}
+
+.text{
+    resize: vertical;
+    min-height: 140px;
+}
+
+.enviar{
+    width:100%;
+    background-color: black;
+    color: white;
+    font-family: 'Roboto Mono';
+    font-size: 16px;
+    text-transform: uppercase;
+    padding: 15px 15px;
+    border-radius: 30px;
+    font-weight: bold;
+    border: none;
+    
+}
+
+.name:focus, .mail:focus, .text:focus{
+    border-color: var(--naranja);
+}
+
+
+
+
+/*/////////////////////////////////////////////////////////////////////////
+/////////////////////////////////INDEX TABLET/////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////*/
+@media (min-width:768px){
+
+/*CABECERA TABLET*/
+.cabecera{ height: 60px;}
+
+.cabecera__logo{
+    width: 180px;
+    height: 60px;
+}
+
+/*FINAL CABECERA TABLET*/
+
+
+
+    .container {max-width: 100%;}
+
+    /*PORTADA*/
+    .imagen__portada{
+        width: 600px;
+        height: 600px;
+    }
+
+    .slogan {
+        font-size: 26px;
+        font-weight: bold;
+        line-height: 21px;
+        letter-spacing: 2px;
+        color:var(--crema);
+        text-transform: uppercase;
+        text-align: center;
+        margin: 30px 60px;
+        margin-bottom: 30px;
+    }
+    
+    .subportada {
+        margin:0 44px;
+    }
+    
+    .titulo {
+        font-size: 36px;
+        font-weight: bold;
+        text-align: center;
+        text-transform: uppercase;
+        color:var(--naranja);
+    }
+    
+    .fecha {
+        font-size: 20px;
+        font-weight: bold;
+        color:var(--crema);
+        margin-left: 194px;
+    }
+    
+    
+    .visitar {
+        display: block;
+        position: absolute;
+        font-family: 'Roboto mono';
+        font-weight: bold;
+        font-size: 23px;
+        color: white;
+        text-align: center;
+        text-transform: uppercase;
+        bottom: 0;
+    }
+
+/*SERVICIOS*/
+.iconos {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 44px;      }
+
+.lujo, .eventos, .restaurante, .pet {font-size: 24px;}
+
+/*DESTACADOS*/
+.destacados__subtitulo {
+    font-size: 20px;
+    padding: 0 44px;}
+
+.destacados__titulo__apetit, .destacados__titulo__biblio, .destacados__titulo__descanso { 
+    font-size: 24px;
+    text-align: left;
+    margin-bottom: 5px;
+    margin-top: 30px;
+    margin-left: 0px;   
+}
+
+.destacados__imagen {
+    width: 290px;
+    height: 290px;
+    margin: 30px 65px;
+}
+
+.naranja__apetit, .naranja__biblio {margin-left: 0;}
+
+.destacados__fecha {
+    font-size: 16px;
+    padding-top: 3px;
+}
+
+.destacados__texto__apetit, .destacados__texto__biblio, .destacados__texto__reserva {
+    font-size: 20px;
+    margin-left: 0;
+    margin-right: 70px;
+}
+
+/*pildora__mas*/
+.destacados__horizontal, .destacados__vertical {display:none;}
+
+.pildora__mas {position: relative;}
+
+.saber__mas, .saber__mas__apetit,
+.saber__mas__biblio, .bonapetit__saber__mas, .biblioteca__saber__mas {
+    position: relative;
+    width: 56px;
+    height: 38px;
+    border-radius: 18px;
+    border:3px solid black;
+    margin-left:0;
+    padding: 15px;  
+}
+
+.destacados__mas {
+    display: block;
+    position: absolute;
+    font-family: 'Roboto mono';
+    color:black;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    bottom: 0;
+    left: 9px;
+    top: 5px;
+}
+
+.separador {margin-top: 0;}
+
+.destacados__texto__reserva {
+    flex:1;
+    display: block;
+    font-size: 20px;
+    margin-left: 0;
+    margin-right: 70px;
+    
+    
+}
+
+.boton__reserva {
+    flex:1;
+    display: block;
+    position: absolute;
+    width: 110px;
+    height: 38px ;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 40px;
+    padding-top: 5px; 
+    margin-top: 0;  
+}
+
+
+/*/////////FOOTER TABLET///////*/
+    .marcador {padding-bottom: 10px;}
+
+    .logo__pequeño {padding-top: 30px 0;}
+
+    .redes { padding-bottom: 30px; }
+
+
+
+/*/////////////////////////////////////////////////////////////////////////
+/////////////////////////////////EXPO TABLET/////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////*/
+    .expo__titulo {text-align: left; margin-left: 130px;}
+
+    .carousel-inner { 
+        width: 510px; 
+        height: 510px;
+        margin: auto;
+        border-radius: 120px;
+        margin-bottom: 30px;
+    }    
+
+    .carousel-control-next {
+        right: 130px;
+    }
+    .carousel-control-prev {
+        left: 130px;
+    }
+
+    .artista__texto { font-size: 18px;
+        padding: 0 80px;}
+
+    .protagonista__texto {
+        font-size: 18px;
+        padding: 0 180px;
+    }
+
+    .separador__expo {
+        width:50%;
+        height: 3px;
+        background-color:black;
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+
+    .artista__foto { 
+        width: 330px;
+        height: 330px;
+        border-radius: 110px;
+        padding-top: 0;
+    }
+    
+    .artista__titulo {
+        padding-top:80px; 
+        padding-left: 0px;}
+
+    .artista__texto { 
+        padding: 0 40px;
+        padding-top: 0;
+        padding-bottom: 70px;}
+
+    .anteriores {
+            background-color: var(--crema);
+            margin: 30px 0;
+        }
+
+    .tarjeta__uno, .tarjeta__tres{ margin-right: 40px;
+        margin-bottom: 30px;}
+    .tarjeta__dos, .tarjeta__cuatro { margin-bottom: 30px;
+        margin-left: 40px;}
+
+    
+    .texto__anteriores { padding: 0 180px 30px;}
+
+
+/*/////////////////////////////////////////////////////////////////////////
+/////////////////////////////////NOSOTROS TABLET/////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////*/
+    .nosotros__titulo {
+        text-align: left;
+        margin-left: 160px;    
+    }
+
+    .nosotros{ padding-bottom: 0};
+
+
+    .nosotros__foto, .gauche__foto {
+        margin-bottom: 0;
+    }
+
+    .nosotros__texto, .gauche__texto {
+        font-size: 18px;
+        padding: 0 170px;
+        line-height: 26px;
+    }
+
+    .separador__nosotros {
+        width:50%;
+        height: 3px;
+        background-color:black;
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+    .texto__subtitulo__nosotros { padding: 0 162px 30px;}
+
+
+
+/*/////////////////////////////////////////////////////////////////////////
+/////////////////////////////////ESPACIOS TABLET/////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////*/
+
+    .separador__espacios { width:70%;}
+
+    .descanso, .bonapetit, .living, .biblioteca { display: flex;}
+
+    .descanso__foto, .bonapetit__foto, .living__foto, .biblioteca__foto {
+        margin:0;
+        padding: 30px 30px;
+        border-radius: 30%;     
+    } 
+
+    .espacios__titulo { 
+        text-align: left;
+        margin-left: 30px;
+        padding-bottom: 0;
+    }
+
+    .espacios__subtitulos {
+        text-align: left;
+        margin-bottom: 0;
+    }
+
+    .descanso__texto, .living__texto, .bonapetit__texto, .biblioteca__texto{
+        font-family: 'Roboto Mono';
+        font-size: 18px;
+        padding: 30px 0;
+    }
+    
+
+    .descanso__info, .living__info {
+        padding-top: 30px;
+        padding-right: 30px;
+        
+    }
+    .bonapetit__info, .biblioteca__info {
+        padding-top: 30px;
+        padding-left: 30px;
+        
+    }
+
+
+    .descanso__reservar, .saber__mas, .bonapetit__saber__mas, .biblioteca__saber__mas { margin-left: 0;}
+
+    
+
+    .bonapetit .espacios__subtitulos,
+    .biblioteca .espacios__subtitulos { text-align: left;}
+
+    
+
+/*/////////////////////////////////////////////////////////////////////////
+/////////////////////////////////RESERVAR TABLET/////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////*/
+    .reservar__titulo { text-align: left; padding-left: 130px;}
+    
+    .separador {display:none;}
+
+    .reservar__texto, .formulario {padding: 0 124px;}
+
+    .entrada, .salida {width: 250px;}
+
+
+
+}
+
+
+
+/*/////////////////////////////////////////////////////////////////////////
+/////////////////////////////////INDEX ESCRITORIO/////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////*/
+@media (min-width: 1280px){
+    
+/*CABECERA ESCRITORIO*/
+
+.cabecera{
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    display: block;
+    padding: 0 12px;
+    position: fixed;
+}
+
+.cabecera__logo{
+    width: 250px;
+    height: 80px;
+    margin-left:0;
+    padding-top: 30px;
+    cursor: pointer;
+    z-index: 999;
+}
+
+.cabecera__burger{ display: none;}
+
+.cabecera__nav{
+    display: block;
+    position: absolute;
+    background-color: transparent;
+    top:50px;
+    left:0;
+    width: 100%;
+    height: calc(100vh - 50px);
+}
+
+
+.cabecera__menu {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top:-40px;
+}
+
+.cabecera__li{
+    margin-bottom: 5px;
+}
+
+.cabecera__link{
+    color: var(--naranja);
+    font-family: 'titillium web';
+    font-size: 22px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/*FINAL CABECERA ESCRITORIO*/
+
+        /* MENU */
+/*PORTADA*/
+
+    .portada {
+        background-color: black;
+        padding-top: 140Px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .imagen__portada {
+        margin-bottom: 50px;
+    }
+
+    .subportada {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+
+    .slogan {
+        font-size: 50px;
+        line-height: 40px;
+        text-align: left;
+        margin-top: -5px;
+        margin-left: 97px;
+        margin-right: 110px;
+        margin-bottom: 110px;
+    }
+
+    .titulo {
+        font-size: 45px;
+        font-weight: bold;
+        text-align: left;
+        margin-left:  97px;
+        text-transform: uppercase;
+        color:var(--naranja);    
+    }
+    
+
+    .fecha {
+        font-size: 22px;
+        font-weight: bold;
+        color:var(--crema);
+        text-align: left;
+        margin-left: 97px;
+        padding-bottom: 20px;
+    }
+
+    .div-boton { 
+        position: relative;
+        width: 128px;
+        height:50px;
+        border-radius: 30px;
+        border: 3px solid var(--crema);
+        padding-top: 4px;
+        padding-left: 11px;
+        top:0;
+        bottom: 0;
+        left: -190px;
+        right: 0;
+    }
+
+
+    /*servicios*/
+
+    .servicios{padding-top: 50px;}
+
+    .borde__cuatro {margin-bottom: 50px;}
+
+    .lujo, .eventos, .restaurante, .pet {
+        font-size: 24px;
+        margin-bottom: 42px;
+    }
+
+    /*destacados*/
+
+    .separador {display: none;}
+
+    .destacados__subtitulo { padding: 0 200px;}
+
+    .bonapetit, .señoras, .descanso { display: flex;
+    justify-content: center;}
+
+    .destacados__texto__reserva { margin-top: 20px;}
+
+    .pildora__mas__apetit { display: flex; justify-content: flex-start;}
+    
+
+/*/////////////////////////////////////////////////////////////////////////
+/////////////////////////////////EXPO ESCRITORIO/////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////*/
+
+
+    .expo { padding-bottom: 60px;}
+
+    .borde__cinco { margin-top: 60px;}
+    .borde__seis { margin-bottom: 30px;}
+    .expo__titulo {
+        margin-bottom: 15px; 
+        padding-bottom:0;}
+
+        .carousel-inner { 
+            width: 600px; 
+            height: 600px;
+        }    
+        
+        
+        .carousel-control-next {
+            right: 340px;
+        }
+        .carousel-control-prev {
+            left: 340px;
+        }
+
+    .ahora__titulo { margin-bottom: 20px;}
+
+    .protagonista {
+        font-size: 50px;
+    }
+    
+    .protagonista__fecha {
+        margin-bottom: 30px;
+    }
+
+    .protagonista__texto {
+        font-size: 18px;
+        padding: 0 360px;
+        margin-bottom: 60px;
+    }
+
+    .artista__texto { 
+        font-size: 18px;
+        padding-left: 130px;
+        padding-right: 200px;
+    }
+    
+    .separador__expo {
+        margin-bottom: 60px;
+        margin-top: 0;
+    }
+
+    .artista__titulo {
+        text-align: left;
+        margin-left: 130px;
+        padding-top: 80px; 
+        padding-left: 0px;}
+
+    .artista__foto { 
+        width: 330px;
+        height: 330px;
+        border-radius: 110px;
+        padding-top: 0;
+        margin-bottom: 60px;
+    }
+
+    .bio__ficha {padding: 0 110px;}
+
+    .proximas { margin-top: 60px;}
+
+    .borde__ocho { margin-bottom: 60px;}
+
+    .proximas__titulo { margin-bottom: 60px;}
+
+    .anteriores__titulo { 
+        margin-bottom: 60px;
+        margin-top: 60px;
+    }
+
+    .tarjeta__uno, .tarjeta__tres{ margin-right: 40px;
+        margin-bottom: 30px;}
+    .tarjeta__dos, .tarjeta__cuatro { margin-bottom: 30px;
+        margin-left: 40px;}
+
+    .texto__anteriores { padding: 0 360px 30px;}
+
+
+    
+
+    
+
+/*/////////////////////////////////////////////////////////////////////////
+/////////////////////////////////NOSOTROS ESCRITORIO/////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////*/
+    .nosotros {padding: 50px 0;}
+
+    .borde__diez {margin-bottom: 50px;}
+    
+    .nosotros__titulo {text-align: left; margin-left: 180px;}
+
+    .nosotros__texto {padding: 0px 134px 0 0;}
+
+    .gauche__texto { padding: 0 0 0 134px;}
+
+    .separador__nosotros {margin-bottom: 50px; }
+
+    .texto__subtitulo__nosotros {
+        text-align: center;
+        font-size: 18px;
+        padding-bottom: 50px;
+    }
+
+    .dato__expo:hover, .dato__espacios:hover {
+        background-color: var(--naranja);
+    }
+
+    
+
+
+/*/////////////////////////////////////////////////////////////////////////
+/////////////////////////////////ESPACIOS ESCRITORIO/////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////*/
+    .saber__mas:hover,
+    .biblioteca__saber__mas:hover,
+    .bonapetit__saber__mas:hover { background-color: black;}
+
+    .saber__mas:hover .destacados__mas {color:var(--crema);}
+    .biblioteca__saber__mas:hover .destacados__mas {color:var(--crema);}
+    .bonapetit__saber__mas:hover .destacados__mas { color: var(--crema);}
+
+    .espacios {padding: 50px 0;}
+
+    .separador__espacios { display: none;}
+
+    .bonapetit__info, .biblioteca__info { text-align: right;}
+
+    .bonapetit .espacios__subtitulos,
+    .biblioteca .espacios__subtitulos { text-align: right;}
+
+    .descanso__imagen, .living__imagen { padding-left: 200px;}
+
+    .descanso__info, .living__info { padding-right: 200px;}
+
+    .bonapetit__imagen, .biblioteca__imagen {padding-left: -200px;}
+
+    .bonapetit__info, .biblioteca__info { padding-left: 200px;}
+
+    .bonapetit .pildora__mas,
+    .biblioteca .pildora__mas {
+        display: flex;
+        justify-content:flex-end};
+
+
+/*/////////////////////////////////////////////////////////////////////////
+/////////////////////////////////RESERVAR ESCRITORIO/////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////*/
+
+    .entrada, .salida {width: 350px;}
+
+    .enviar:hover { color: var(--naranja)}
+
+    .reservar__titulo { text-align: left; padding-left: 370px;}
+    
+    .separador {display:none;}
+
+    .reservar__texto, .formulario {padding: 0px 370px;}
+
+}
