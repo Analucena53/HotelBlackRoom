@@ -1,6 +1,9 @@
 # HotelBlackRoom
 Proyecto final del máster de desarrollo web y front de la academia Gauss. Se trata de un sitio web diseñado para un hotel industrial que se especializa en la realización de exposiciones de arte en su sala principal.
 
+###PUEDES VISUALIZAR AQUI la HOME de la website (Github Pages no permite la navegacione entre las diferentes secciones):
+https://analucena53.github.io/HotelBlackRoom/
+
 Proyecto Final del Máster en Desarrollo Web y Frontend - Academia Gauss
 Descripción
 Este proyecto es el trabajo final del Máster en Desarrollo Web y Frontend de la Academia Gauss. Se trata de un sitio web diseñado para un hotel industrial que se especializa en la realización de exposiciones de arte en su sala principal. El diseño del hotel combina una estética industrial con elementos modernos y vanguardistas, ofreciendo un espacio único tanto para huéspedes como para visitantes de exposiciones.
