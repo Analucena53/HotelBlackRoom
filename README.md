@@ -49,7 +49,7 @@ JavaScript
 
 Instalación
 1. Clona el repositorio en tu máquina local:
-git clone https://github.com/tu-usuario/tu-repo.git
+git clone https://github.com/Analucena53/HotelBlackRoom.git
 
 2. Abre el archivo index.html en tu navegador web.
 
